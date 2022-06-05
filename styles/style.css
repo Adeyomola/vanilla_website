@@ -102,8 +102,8 @@ main {
 }
 
 footer {
-    position: absolute;
-    bottom: 0px;
+    position: relative;
+    top: 225px;
     width: 100%;
     max-width: 100%;
     margin: auto;
@@ -117,10 +117,10 @@ footer {
     margin: auto;
     text-align: center;
 }
-
-@media (min-width: 320px) and (max-width: 374px) {
+/* media query for small smartphones */
+@media (min-width: 320px) and (max-width: 359px) {
     body {
-        background-size: 220vmin;
+        background-size: cover;
     }
 
     nav a {
@@ -143,19 +143,12 @@ footer {
     }
 
     #intro {
-        width: 60%;
-        max-width: 100%;
         padding: 10px 0;
-        font: 1.6rem var(--intro-line-font);
-        margin: auto;
-        text-align: center;
+        font-size: 1.6rem;
     }
 
     #intro-continue {
-        width: 40%;
-        max-width: 100%;
-        font: 1.2rem var(--intro-second-line);
-        font-style: oblique;
+        font-size: 1.2rem;
         margin: auto auto auto 30%;
     }
 
@@ -163,10 +156,10 @@ footer {
         font-size: 1.2rem;
     }
 }
-
-@media (min-width: 375px) and (max-width: 760px) {
+/* media query for phablets */
+@media (min-width: 360px) and (max-width: 760px) {
     body {
-        background-size: 220vmin;
+        background-size: cover;
     }
 
     nav a {
@@ -189,28 +182,28 @@ footer {
     }
 
     #intro {
-        width: 60%;
-        max-width: 100%;
         padding: 10px 0;
-        font: 1.8rem var(--intro-line-font);
+        font-size: 1.8rem;
     }
 
     #intro-continue {
-        width: 40%;
-        max-width: 100%;
-        font: 1.4rem var(--intro-second-line);
+        font-size: 1.2rem;
         font-style: oblique;
         margin: auto auto auto 30%;
     }
 
+    footer {
+        top: 500px;
+    }
+
     #footer {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 }
-
+/* media query for tablets */
 @media (min-width: 761px) and (max-width: 1024px) {
     body {
-        background-size: 185vmin;
+        background-size: cover;
     }
 
     nav a {
@@ -233,23 +226,23 @@ footer {
     }
 
     #intro {
-        width: 60%;
-        max-width: 100%;
         padding: 10px 0;
         font: 3rem var(--intro-line-font);
     }
 
     #intro-continue {
-        width: 40%;
-        max-width: 100%;
         font: 2rem var(--intro-second-line);
         font-style: oblique;
         margin: auto auto auto 30%;
+    }
+
+    footer {
+        top: 700px;
     }
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
     body {
-        background-size: 1100px 670px;
+        background-size: cover;
     }
 }

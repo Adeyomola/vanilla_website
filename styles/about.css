@@ -67,10 +67,9 @@ main {
     grid-template-rows: auto auto auto;
 }
 
-
 footer {
-    position: absolute;
-    bottom: 0px;
+    position: relative;
+    top: 560px;
     width: 100%;
     max-width: 100%;
     margin: auto;
@@ -85,9 +84,9 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 320px) and (max-width: 374px) {
+@media (min-width: 320px) and (max-width: 359px) {
     body {
-        background-size: 220vmin;
+        background-size: cover;
     }
 
     nav a {
@@ -104,14 +103,18 @@ footer {
         padding-top: 10%;
     }
 
+    footer {
+        top: 620px;
+    }
+
     #footer {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
 
-@media (min-width: 375px) and (max-width: 760px) {
+@media (min-width: 360px) and (max-width: 760px) {
     body {
-        background-size: 220vmin;
+        background-size: cover;
     }
 
     nav a {
@@ -128,14 +131,18 @@ footer {
         padding-top: 15%;
     }
 
+    footer {
+        top: 700px;
+    }
+
     #footer {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 }
 
 @media (min-width: 761px) and (max-width: 1024px) {
     body {
-        background-size: 185vmin;
+        background-size: cover;
     }
 
     nav a {
@@ -151,10 +158,14 @@ footer {
         width: 100%;
         padding-top: 10%;
     }
+
+    footer {
+        top: 1024px;
+    }
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
     body {
-        background-size: 1100px 670px;
+        background-size: cover;
     }
 }
