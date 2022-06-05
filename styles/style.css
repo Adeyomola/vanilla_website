@@ -1,0 +1,254 @@
+* {
+    --active-color: #5b573b;
+    --nav-link-font: fantasy;
+    --intro-line-font: Candara;
+    --intro-second-line: Garamond;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    max-width: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url(/images/pexels-andreea-ch-1166644.jpg);
+    background-size: 1540px 800px;
+}
+
+nav {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    margin: 5px;
+    text-decoration: none;
+    font: 1.1rem monospace;
+    color: black;
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.active {
+    background-color: #5b573b;
+    border-radius: 3px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 4px 6px;
+    background-color: black;
+    border-radius: 1mm;
+}
+
+main {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 7%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+#picture-div {
+    width: 80%;
+    max-width: 100%;
+    grid-row: 1;
+    margin: auto;
+}
+
+#My-picture {
+    width: 15%;
+    max-width: 100%;
+    border-radius: 50%;
+    margin: auto auto auto 25%;
+}
+
+#intro {
+    width: 60%;
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+    font: 80px var(--intro-line-font);
+    grid-row: 2;
+}
+
+
+#intro-continue {
+    width: 40%;
+    max-width: 100%;
+    text-align: center;
+    margin: auto auto auto 19.5%;
+    font: 3rem var(--intro-second-line);
+    font-style: oblique;
+    grid-row: 3;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    max-width: 100%;
+    margin: auto auto 1% auto;
+}
+
+#footer {
+    font-family: monospace;
+    font-size: 2rem;
+    width: 60%;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+    body {
+        background-size: 220vmin;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        margin-top: 2px;
+    }
+
+    main {
+        width: 100%;
+        padding-top: 10%;
+    }
+
+    #My-picture {
+        width: 30%;
+        margin: auto auto auto 35%;
+    }
+
+    #intro {
+        width: 60%;
+        max-width: 100%;
+        padding: 10px 0;
+        font: 1.6rem var(--intro-line-font);
+        margin: auto;
+        text-align: center;
+    }
+
+    #intro-continue {
+        width: 40%;
+        max-width: 100%;
+        font: 1.2rem var(--intro-second-line);
+        font-style: oblique;
+        margin: auto auto auto 30%;
+    }
+
+    #footer {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 760px) {
+    body {
+        background-size: 220vmin;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        margin-top: 2px;
+    }
+
+    main {
+        width: 100%;
+        padding-top: 15%;
+    }
+
+    #My-picture {
+        width: 30%;
+        margin: auto auto auto 35%;
+    }
+
+    #intro {
+        width: 60%;
+        max-width: 100%;
+        padding: 10px 0;
+        font: 1.8rem var(--intro-line-font);
+    }
+
+    #intro-continue {
+        width: 40%;
+        max-width: 100%;
+        font: 1.4rem var(--intro-second-line);
+        font-style: oblique;
+        margin: auto auto auto 30%;
+    }
+
+    #footer {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 1024px) {
+    body {
+        background-size: 185vmin;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        margin-top: 2px;
+    }
+
+    main {
+        width: 100%;
+        padding-top: 10%;
+    }
+
+    #My-picture {
+        width: 30%;
+        margin: auto auto auto 35%;
+    }
+
+    #intro {
+        width: 60%;
+        max-width: 100%;
+        padding: 10px 0;
+        font: 3rem var(--intro-line-font);
+    }
+
+    #intro-continue {
+        width: 40%;
+        max-width: 100%;
+        font: 2rem var(--intro-second-line);
+        font-style: oblique;
+        margin: auto auto auto 30%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    body {
+        background-size: 1100px 670px;
+    }
+}
