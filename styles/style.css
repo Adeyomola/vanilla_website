@@ -126,8 +126,20 @@ footer {
         background-size: cover;
     }
 
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
     nav a {
         display: none;
+        color: gainsboro;
+    }
+
+    nav:hover a {
+        display: block;
+        background-color: #5b573b;
+        border-radius: 3px;
     }
 
     .hamburger {
@@ -166,8 +178,20 @@ footer {
         background-size: cover;
     }
 
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
     nav a {
         display: none;
+        color: gainsboro;
+    }
+
+    nav:hover a {
+        display: block;
+        background-color: #5b573b;
+        border-radius: 3px;
     }
 
     .hamburger {
@@ -211,8 +235,20 @@ footer {
         background-size: cover;
     }
 
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
     nav a {
         display: none;
+        color: gainsboro;
+    }
+
+    nav:hover a {
+        display: block;
+        background-color: #5b573b;
+        border-radius: 3px;
     }
 
     .hamburger {
