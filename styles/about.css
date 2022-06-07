@@ -31,7 +31,7 @@ nav {
 nav a {
     margin: 5px;
     text-decoration: none;
-    font: 1.1rem monospace;
+    font: 1rem var(--intro-line-font);
     color: black;
     padding: 10px;
 }

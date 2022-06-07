@@ -21,17 +21,19 @@ body {
     background-size: 1540px 800px;
 }
 
+
 nav {
     width: 100%;
     max-width: 100%;
     display: flex;
     justify-content: flex-end;
+    margin: auto;
 }
 
 nav a {
     margin: 5px;
     text-decoration: none;
-    font: 1.1rem monospace;
+    font: 1rem var(--intro-line-font);
     color: black;
     padding: 10px;
 }
@@ -117,6 +119,7 @@ footer {
     margin: auto;
     text-align: center;
 }
+
 /* media query for small smartphones */
 @media (min-width: 320px) and (max-width: 359px) {
     body {
@@ -156,6 +159,7 @@ footer {
         font-size: 1.2rem;
     }
 }
+
 /* media query for phablets */
 @media (min-width: 360px) and (max-width: 760px) {
     body {
@@ -200,6 +204,7 @@ footer {
         font-size: 1.2rem;
     }
 }
+
 /* media query for tablets */
 @media (min-width: 761px) and (max-width: 1024px) {
     body {
