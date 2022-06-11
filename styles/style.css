@@ -109,6 +109,9 @@ footer {
     width: 100%;
     max-width: 100%;
     margin: auto;
+    animation-name: footer-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 #footer {
@@ -118,6 +121,28 @@ footer {
     max-width: 100%;
     margin: auto;
     text-align: center;
+}
+
+@keyframes footer-animation {
+    0% {
+        right: 0px;
+    }
+
+    25% {
+        right: 10px;
+    }
+
+    50% {
+        right: 20px;
+    }
+
+    75% {
+        right: 10px;
+    }
+
+    100% {
+        right: 0px;
+    }
 }
 
 /* media query for small smartphones */
