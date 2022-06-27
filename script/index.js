@@ -1,17 +1,9 @@
-let visitor = document.createElement("div");
+const hamburger = document.getElementById("hamburger");
+let nav = document.querySelector("nav");
+const layers = document.querySelectorAll(".hamburger span");
 
-let visitorsName = prompt("Please enter a name");
-alert("Welcome" + " " + visitorsName);
+hamburger.addEventListener("click", () => {
+  nav.classList.toggle("shownav");
+  layers.forEach((layer) => layer.classList.toggle("hamburgerActive"));
+});
 
-visitor.innerText = "Welcome " + visitorsName;
-visitor.style.color = "black";
-visitor.style.fontSize = "20px";
-visitor.style.fontFamily = "Candara"
-visitor.style.width = "80%";
-visitor.style.marginLeft = "auto";
-visitor.style.marginRight = "auto"
-visitor.style.padding = "10px"
-visitor.style.textAlign = "center"
-
-const nav = document.querySelector("nav")
-nav.insertAdjacentElement("afterend", visitor)

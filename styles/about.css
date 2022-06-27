@@ -67,11 +67,13 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
 main>h2 {
-    font:2.5rem var(--intro-line-font);
+    font: 2.5rem var(--intro-line-font);
     font-weight: bold;
     margin: 10px auto 30px auto;
 }
+
 main>section {
     width: 20%;
     text-align: left;
@@ -144,22 +146,55 @@ footer {
     nav {
         display: flex;
         flex-direction: column;
+        background-color: #5b573b;
+        width: 89%;
+        height: 100vh;
+        margin: 0;
+        justify-content: flex-start;
+        border-radius: 3px;
+        position: absolute;
+        transform: translateX(-400px);
+        /* transition: 0.5s; */
+    }
+
+    .shownav {
+        transform: translateX(0);
     }
 
     nav a {
-        display: none;
+        display: block;
         color: gainsboro;
+        padding: 10px;
+        font-size: large;
+        transition: 0.2s;
+        border-bottom: 0.1px solid grey;
     }
 
-    nav:hover a {
-        display: block;
-        background-color: #5b573b;
+    nav a:hover {
+        transform: translateX(2.5rem);
+        text-decoration: none;
+        background-color: black;
         border-radius: 3px;
     }
 
     .hamburger {
         display: block;
         margin-top: 2px;
+        float: right;
+    }
+
+    .top-bun.hamburgerActive {
+        transform: rotate(45deg) translate(5px, 7px);
+        transition: 0.1s;
+    }
+
+    .middle.hamburgerActive {
+        visibility: hidden;
+    }
+
+    .bottom-bun.hamburgerActive {
+        transform: rotate(-45deg) translate(5px, -7px);
+        transition: 0.1s;
     }
 
     main {
@@ -188,22 +223,55 @@ footer {
     nav {
         display: flex;
         flex-direction: column;
+        background-color: #5b573b;
+        width: 90%;
+        height: 100vh;
+        margin: 0;
+        justify-content: flex-start;
+        border-radius: 3px;
+        position: absolute;
+        transform: translateX(-800px);
+        /* transition: 0.1s; */
+    }
+
+    .shownav {
+        transform: translateX(0);
     }
 
     nav a {
-        display: none;
+        display: block;
         color: gainsboro;
+        padding: 10px;
+        font-size: large;
+        transition: 0.2s;
+        border-bottom: 0.1px solid grey;
     }
 
-    nav:hover a {
-        display: block;
-        background-color: #5b573b;
+    nav a:hover {
+        transform: translateX(2.5rem);
+        text-decoration: none;
+        background-color: black;
         border-radius: 3px;
     }
 
     .hamburger {
         display: block;
         margin-top: 2px;
+        float: right;
+    }
+
+    .top-bun.hamburgerActive {
+        transform: rotate(45deg) translate(5px, 7px);
+        transition: 0.1s;
+    }
+
+    .middle.hamburgerActive {
+        visibility: hidden;
+    }
+
+    .bottom-bun.hamburgerActive {
+        transform: rotate(-45deg) translate(5px, -7px);
+        transition: 0.1s;
     }
 
     main {
@@ -232,22 +300,56 @@ footer {
     nav {
         display: flex;
         flex-direction: column;
+        background-color: #5b573b;
+        width: 94.5%;
+        height: 100vh;
+        margin: 0;
+        justify-content: flex-start;
+        border-radius: 3px;
+        position: absolute;
+        transform: translateX(-1024px);
+    }
+
+    .shownav {
+        transform: translateX(0);
     }
 
     nav a {
-        display: none;
+        display: block;
         color: gainsboro;
+        padding: 10px;
+        font-size: large;
+        transition: 0.2s;
+        border-bottom: 0.1px solid grey;
     }
 
-    nav:hover a {
-        display: block;
-        background-color: #5b573b;
+    nav a:hover {
+        transform: translateX(3rem);
+        text-decoration: none;
+        background-color: black;
         border-radius: 3px;
     }
 
     .hamburger {
         display: block;
-        margin-top: 2px;
+        margin-top: 5px;
+        margin-right: 5px;
+        float: right;
+        transform: scale(1.2);
+    }
+
+    .top-bun.hamburgerActive {
+        transform: rotate(45deg) translate(5px, 7px);
+        transition: 0.1s;
+    }
+
+    .middle.hamburgerActive {
+        visibility: hidden;
+    }
+
+    .bottom-bun.hamburgerActive {
+        transform: rotate(-45deg) translate(5px, -7px);
+        transition: 0.1s;
     }
 
     main {
