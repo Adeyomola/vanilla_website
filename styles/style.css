@@ -167,7 +167,7 @@ footer {
 
     .shownav {
         transform: translateX(0);
-        transition: 0.4s;
+        transition: 0.2s;
     }
 
     nav a {
@@ -252,7 +252,7 @@ footer {
 
     .shownav {
         transform: translateX(0);
-        transition: 0.4s;
+        transition: 0.2s;
     }
 
     nav a {
@@ -343,7 +343,7 @@ footer {
 
     .shownav {
         transform: translateX(0);
-        transition: 0.4s;
+        transition: 0.2s;
     }
 
     nav a {
