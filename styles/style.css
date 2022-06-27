@@ -163,11 +163,11 @@ footer {
         border-radius: 3px;
         position: absolute;
         transform: translateX(-400px);
-        /* transition: 0.5s; */
     }
 
     .shownav {
         transform: translateX(0);
+        transition: 0.4s;
     }
 
     nav a {
@@ -248,11 +248,11 @@ footer {
         border-radius: 3px;
         position: absolute;
         transform: translateX(-800px);
-        /* transition: 0.1s; */
     }
 
     .shownav {
         transform: translateX(0);
+        transition: 0.4s;
     }
 
     nav a {
@@ -343,6 +343,7 @@ footer {
 
     .shownav {
         transform: translateX(0);
+        transition: 0.4s;
     }
 
     nav a {
