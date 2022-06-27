@@ -190,6 +190,7 @@ footer {
 
     .middle.hamburgerActive {
         visibility: hidden;
+        transition: 0.1s;
     }
 
     .bottom-bun.hamburgerActive {
@@ -267,6 +268,7 @@ footer {
 
     .middle.hamburgerActive {
         visibility: hidden;
+        transition: 0.1s;
     }
 
     .bottom-bun.hamburgerActive {
@@ -346,6 +348,7 @@ footer {
 
     .middle.hamburgerActive {
         visibility: hidden;
+        transition: 0.1s;
     }
 
     .bottom-bun.hamburgerActive {
