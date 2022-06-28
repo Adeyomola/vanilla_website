@@ -61,39 +61,31 @@ nav a:hover {
 main {
     width: 95%;
     max-width: 100%;
-    margin: auto;
+    margin: 110px auto;
     padding: 5px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-}
-
-main>h2 {
-    font: 2.5rem var(--intro-line-font);
-    font-weight: bold;
-    margin: 10px auto 30px auto;
 }
 
 main>section {
     width: 20%;
     text-align: left;
-    padding: 10px;
-    margin: 10px;
-    background-color: rgba(220, 220, 220, 0.766);
-    border-radius: 20px;
-    font: 1rem var(--intro-line-font);
-    list-style: square;
-    box-shadow: -2px 2px 2px #5b573bb1;
+    padding: 80px;
+    margin: 25px;
+    background-color: #5b573bc4;
+    border-radius: 5px;
+    font: 1.1rem calibri;
+    list-style: circle;
+    box-shadow: -5px -2px 5px 3px #5b573bb1;
 }
 
-section>h3 {
+section>h2 {
     line-height: 0;
     text-align: center;
 }
 
 section>p {
     text-align: center;
-    padding: 10px;
 }
 
 footer {
@@ -201,14 +193,20 @@ footer {
     main {
         width: 100%;
         padding-top: 10%;
+        flex-direction: column;
+        margin: auto;
     }
 
     main>section {
         width: 80%;
+        padding: 20px;
+        margin-bottom: 15px;
+        background-color: #5b573bba;
+        font-size: 1rem;
     }
 
     footer {
-        top: 80px;
+        top: 50px;
     }
 
     #footer {
@@ -279,14 +277,19 @@ footer {
     main {
         width: 100%;
         padding-top: 15%;
+        flex-direction: column;
+        margin: auto;
     }
 
     main>section {
         width: 80%;
+        padding: 25px 25px;
+        background-color: #5b573bba;
+        margin-bottom: 20px;
     }
 
     footer {
-        top: 100px;
+        top: 50px;
     }
 
     #footer {
@@ -359,14 +362,20 @@ footer {
     main {
         width: 100%;
         padding-top: 10%;
+        flex-direction: column;
+        margin: auto;
     }
 
     main>section {
         width: 40%;
+        background-color: #5b573bba;
+        margin-bottom: 50px;
+        padding: 50px 170px;
+        font-size: 1.7rem;
     }
 
     footer {
-        top: 300px;
+        top: 100px;
     }
 }
 
