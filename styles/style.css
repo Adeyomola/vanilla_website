@@ -105,8 +105,8 @@ main {
 }
 
 footer {
-    position: relative;
-    top: 225px;
+    position: absolute;
+    bottom: 0px;
     width: 100%;
     max-width: 100%;
     margin: auto;
@@ -315,10 +315,6 @@ footer {
         margin: auto auto auto 30%;
     }
 
-    footer {
-        top: 500px;
-    }
-
     #footer {
         font-size: 1.2rem;
     }
@@ -406,10 +402,6 @@ footer {
         font: 2rem var(--intro-second-line);
         font-style: oblique;
         margin: auto auto auto 30%;
-    }
-
-    footer {
-        top: 700px;
     }
 }
 

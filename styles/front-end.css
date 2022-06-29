@@ -1,0 +1,118 @@
+* {
+    --active-color: #5b573b;
+    --nav-link-font: fantasy;
+    --intro-line-font: Candara;
+    --intro-second-line: Garamond;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+}
+
+#link-container {
+    width: 90%;
+    height: 80vh;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 5rem;
+    background-color: #5b573b50;
+    border-radius: 5px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 2rem;
+}
+
+section>a {
+    height: 10%;
+    border: 1px solid #5b573b;
+    border-radius: 10px;
+    text-align: center;
+    padding: 6rem 1rem;
+    text-decoration: none;
+    color: black;
+    font-family: candara;
+    font-size: 1.2rem;
+    background-color: #5b573b;
+    margin: 0.8rem;
+}
+
+section>a:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 1px -1px 4px 1px;
+}
+
+footer {
+    bottom: 0px;
+}
+
+@media (min-width: 320px) and (max-width: 359px) {
+    #link-container {
+        width: 90%;
+        background-color: transparent;
+        padding-top: 0;
+    }
+
+    section {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    footer {
+        position: relative;
+        top: 650px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 760px) {
+    #link-container {
+        background-color: transparent;
+        padding-top: 0;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    section>a {
+        font-size: 1.4rem;
+    }
+
+    footer {
+        position: relative;
+        top: 450px;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 1024px) {
+    #link-container {
+        background-color: transparent;
+        padding-top: 0;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: unset;
+    }
+
+    section>a {
+        font-size: 1.6rem;
+    }
+}

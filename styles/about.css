@@ -59,12 +59,15 @@ nav a:hover {
 }
 
 main {
-    width: 95%;
+    width: 90%;
+    min-height: 80vh;
     max-width: 100%;
-    margin: 110px auto;
+    margin: 30px auto;
     padding: 5px;
     display: flex;
     align-items: center;
+    background-color: #5b573b3d;
+    border-radius: 5px;
 }
 
 main>section {
@@ -72,11 +75,10 @@ main>section {
     text-align: left;
     padding: 80px;
     margin: 25px;
-    background-color: #5b573bc4;
+    background-color: #5b573bd8;
     border-radius: 5px;
     font: 1.1rem calibri;
     list-style: circle;
-    box-shadow: 0 0 2px 3px #5b573b8f;
 }
 
 section>h2 {
@@ -90,8 +92,8 @@ section>p {
 
 footer {
     position: relative;
-    top: 40px;
-    width: 95%;
+    bottom: 0px;
+    width: 100%;
     max-width: 100%;
     margin: auto;
     animation-name: footer-animation;
@@ -192,6 +194,7 @@ footer {
 
     main {
         width: 100%;
+        background-color: transparent;
         padding-top: 10%;
         flex-direction: column;
         margin: auto;
@@ -201,12 +204,7 @@ footer {
         width: 80%;
         padding: 20px;
         margin-bottom: 15px;
-        background-color: #5b573bba;
         font-size: 1rem;
-    }
-
-    footer {
-        top: 50px;
     }
 
     #footer {
@@ -276,6 +274,7 @@ footer {
 
     main {
         width: 100%;
+        background-color: transparent;
         padding-top: 15%;
         flex-direction: column;
         margin: auto;
@@ -284,13 +283,8 @@ footer {
     main>section {
         width: 80%;
         padding: 25px 25px;
-        background-color: #5b573bba;
         margin-bottom: 20px;
         font-size: 1rem;
-    }
-
-    footer {
-        top: 50px;
     }
 
     #footer {
@@ -362,6 +356,7 @@ footer {
 
     main {
         width: 100%;
+        background-color: transparent;
         padding-top: 10%;
         flex-direction: column;
         margin: auto;
@@ -369,15 +364,11 @@ footer {
 
     main>section {
         width: 40%;
-        background-color: #5b573bba;
         margin-bottom: 50px;
         padding: 50px 170px;
         font-size: 1.7rem;
     }
 
-    footer {
-        top: 100px;
-    }
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
