@@ -110,6 +110,8 @@ footer {
     width: 100%;
     max-width: 100%;
     margin: auto;
+    background-color: gainsboro;
+    padding: 10px;
     animation-name: footer-animation;
     animation-duration: 5s;
     animation-iteration-count: infinite;
