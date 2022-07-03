@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/blog.css">
+    <script src="./script/index.js" defer></script>
+    <title>Blog</title>
+</head>
+
+<body>
+    <div class="hamburger" id="hamburger">
+        <span class="top-bun"></span>
+        <span class="middle"></span>
+        <span class="bottom-bun"></span>
+    </div>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About Me</a>
+        <a href="./cloud.html">Cloud Engineering</a>
+        <a href="./front-end.html">Front-End Engineering</a>
+        <a href="./machine-learning.html">Machine Learning</a>
+        <a href="./blog.html" class="active">Blog Articles</a>
+    </nav>
+    <article>
+        <h1>Asynchronous JavaScript and Callbacks - a Simple Summary</h1>
+        <p>Asynchronous codes are basically codes that do not complete their execution according to the regular flow of
+            the
+            code
+            blocks in a script. In other words, the code blocks that come after an asynchronous code may complete their
+            execution
+            before the asynchronous code.
+        </p>
+        <br>
+        <h2>
+            So, What Is the Big Deal With Asynchronous Codes?
+        </h2>
+        <p>
+            The following is an example of a regular script (one without asynchronous codes):
+        </p>
+        <img src="./images/Image 1.png" alt="">
+        <p>
+            As you can see, the codes in the script above are executed according to the way they are called. But if we
+            have
+            an
+            asynchronous code, like the XMLHttpRequest() below, the code blocks in the script will not be executed in
+            the
+            order they
+            are called.
+            See below:
+        </p>
+        <img src="./images/Image 2.png" alt="">
+        <p>
+            As said before, asynchronous codes do not follow the regular flow of the program or script. So, any code
+            that
+            needs a
+            value from the asynchronous code for its own execution will not work as it should.
+            If a code needs a value from the asynchronous code in your script, the code could either:
+            <li>Wait for the complete execution of the asynchronous code before it completes its own execution.</li>
+            <li>Throw an error.</li>
+            To avoid a situation where a code throws an error because it depends on an asynchronous code, callbacks are
+            added to
+            asynchronous codes.
+        </p>
+        <br>
+        <h2>Callbacks</h2>
+        <p>Callbacks are functions used as arguments in another function. They offer some control over the sequence in
+            which
+            the
+            codes in a script are executed.
+            By adding a code as a callback to an asynchronous function(asynchronous code), you ensure that such code
+            will
+            only
+            execute when the asynchronous function completes its execution. This way, the code will only be initiated
+            when
+            it gets a
+            value from the asynchronous function. Hence, it will not throw an error.
+        </p>
+        <br>
+        <p>
+            If we include callbacks to the asynchronous script above, we will get the following:
+        </p>
+        <img src="./images/Image 3.png" alt="">
+        <p>
+            By making them callbacks, the two functions that need a value from the asynchronous function will not throw
+            an
+            error.
+            Being callbacks in the asynchronous function, they are compelled to wait for the asynchronous function
+            before
+            they
+            execute.
+        </p>
+        <br>
+        <h2>
+            Summary
+        </h2>
+        <p>
+            Normally, JavaScript codes execute in the order in which you call them. However, an asynchronous code will
+            not follow
+            this regular flow. This means an asynchronous code will most likely execute later than a code you called
+            after it.
+        </p>
+        <p>
+            If the execution of a code called after an asynchronous code is dependent on the value returned by the
+            asynchronous
+            code, it may throw an error. To avoid this, such codes are added to the asynchronous functions (asynchronous
+            codes) as
+            callbacks.
+        </p>
+    </article>
+</body>
+
+</html>
