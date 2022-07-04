@@ -38,6 +38,10 @@ nav a {
     padding: 10px;
 }
 
+a[href*='cloud.html'] {
+    pointer-events: none;
+}
+
 nav a:hover {
     text-decoration: underline;
 }

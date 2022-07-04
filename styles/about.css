@@ -40,6 +40,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
+a[href*='cloud.html'] {
+    pointer-events: none;
+}
+
 .active {
     background-color: #5b573b;
     border-radius: 3px;
