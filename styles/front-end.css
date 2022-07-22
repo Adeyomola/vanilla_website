@@ -17,30 +17,29 @@ body {
 }
 
 #link-container {
-    width: 90%;
+    width: 80%;
     height: 80vh;
     max-width: 100%;
     margin: 0 auto;
-    padding-top: 5rem;
     background-color: #5b573b50;
     border-radius: 5px;
 }
 
 section {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 1%;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1px;
     margin: 0 auto;
-    align-items: center;
     padding: 2rem;
 }
 
 section>a {
-    height: 10%;
+    height: 6rem;
+    width: 10rem;
+    padding: 4rem 1rem 0 1rem;
     border: 1px solid #5b573b;
     border-radius: 10px;
     text-align: center;
-    padding: 6rem 1rem;
     text-decoration: none;
     color: black;
     font-family: candara;
@@ -60,21 +59,20 @@ footer {
 
 @media (min-width: 320px) and (max-width: 359px) {
     #link-container {
-        width: 90%;
+        width: 100%;
         background-color: transparent;
         padding-top: 0;
     }
 
     section {
-        width: 85%;
-        display: flex;
-        flex-direction: column;
-        align-items: unset;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    footer {
-        position: relative;
-        top: 650px;
+    section>a {
+        font-size: 0.8rem;
+        width: 5.3rem;
+        height: 4rem;
+        padding: 2.8rem 1rem 1rem 1rem;
     }
 }
 
@@ -82,21 +80,18 @@ footer {
     #link-container {
         background-color: transparent;
         padding-top: 0;
+        width: 100%;
     }
 
     section {
-        display: flex;
-        flex-direction: column;
-        align-items: unset;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     section>a {
-        font-size: 1.4rem;
-    }
-
-    footer {
-        position: relative;
-        top: 450px;
+        font-size: 1rem;
+        width: 6.8rem;
+        height: 4rem;
+        padding: 2.8rem 1rem 1rem 1rem;
     }
 }
 
@@ -104,15 +99,18 @@ footer {
     #link-container {
         background-color: transparent;
         padding-top: 0;
+        width: 90%;
     }
 
     section {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: unset;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     section>a {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+        width: 10rem;
+        height: 6rem;
+        padding: 4rem 1rem 1rem 1rem;
     }
 }
